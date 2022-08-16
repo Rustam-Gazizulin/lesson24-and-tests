@@ -9,8 +9,8 @@ import re
 
 
 def find_date(txt):
-    # TODO напишите Ваш код здесь
-    pass
+    regexp = re.compile(r"\d{1,2}\/\w{3,8}\/\d{4}:\d{2}:\d{2}:\d{2}")
+    return regexp.findall(txt)
 
 
 if __name__ == "__main__":
