@@ -31,3 +31,6 @@ def test_func():
     if Counter.v < 3:
         raise ValueError
     print("test_func has finished")
+
+if __name__ == "__main__":
+    test_func()
