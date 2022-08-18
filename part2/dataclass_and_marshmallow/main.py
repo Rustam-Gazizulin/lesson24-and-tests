@@ -99,5 +99,11 @@ def get_vk_data(data) -> VkData:
 
 
 if __name__ == "__main__":
-    print(get_vk_data(vk_data))
+    #print(get_vk_data(vk_data))
+    data_obj = get_vk_data(vk_data)
+    #print(data_obj)
+    #print(data_obj.response.items)
+    for user in data_obj.response.items:
+        print(user.first_name)
+
 

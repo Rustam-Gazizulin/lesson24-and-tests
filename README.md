@@ -58,7 +58,7 @@ Pycharm может предложить вам сделать это после 
 - part2/dataclass_rollback+
 - part2/point_factory+
 - part2/vk_user+
-- part2/dataclass_and_marshmallow
+- part2/dataclass_and_marshmallow+
 - part2/typing_introduction
 
 
