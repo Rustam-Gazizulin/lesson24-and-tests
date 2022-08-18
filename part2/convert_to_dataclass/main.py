@@ -10,18 +10,34 @@
 
 import datetime
 from typing import Optional, List
+from dataclasses import field, dataclass, asdict
 
 
 class Person:
     def __init__(
-        self, first_name: str,
-        last_name: str,
-        birthday: datetime.date,
-        middle_name: Optional[str] = None,
-        skills: List[str] = None
+            self, first_name: str,
+            last_name: str,
+            birthday: datetime.date,
+            middle_name: Optional[str] = None,
+            skills: List[str] = None
     ):
         self.first_name = first_name
         self.last_name = last_name
         self.birthday = birthday
         self.middle_name = middle_name
         self.skills = skills or []
+
+
+@dataclass
+class Person:
+    first_name: str
+    last_name: str
+    birthday: datetime.date
+    middle_name: Optional[str]
+    skills: List[str] = field(default_factory=list)
+
+
+p = Person('Ivan', 'Petrov', (1987, 6, 24), 'qwerty')
+
+print(p)
+print(asdict(p))
