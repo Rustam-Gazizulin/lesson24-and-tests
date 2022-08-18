@@ -54,7 +54,7 @@ Pycharm может предложить вам сделать это после 
 - part2/list_typing+
 - part2/dict_typing+
 - part2/optional_typing+
-- part2/convert_to_dataclass
+- part2/convert_to_dataclass+
 - part2/dataclass_rollback
 - part2/point_factory
 - part2/vk_user
