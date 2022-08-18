@@ -49,8 +49,8 @@ Pycharm может предложить вам сделать это после 
 
 #### Часть 2:
 
-- part2/simple_types_str
-- part2/simple_types_int
+- part2/simple_types_str+
+- part2/simple_types_int+
 - part2/list_typing
 - part2/dict_typing
 - part2/optional_typing
