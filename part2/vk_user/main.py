@@ -41,11 +41,31 @@ vk_data = {
 
 
 # TODO определите классы OnlineInfo, Occupation и University.
+@dataclass
+class OnlineInfo:
+    visible: bool
+    last_seen: int
+
+@dataclass
+class Occupation:
+    id: int
+    type: str
+
+@dataclass
+class University:
+    chair_name: str
+    id: int
+    name: str
+
 
 @dataclass
 class User:
-    # TODO дополните класс User
-    pass
+    id: int
+    first_name: str
+    last_name: str
+    online_info: OnlineInfo
+    occupation: Dict[str, Occupation]
+    universities: List[University]
 
 
 @dataclass
@@ -57,3 +77,4 @@ class VkResponse:
 @dataclass
 class VkData:
     response: VkResponse
+
