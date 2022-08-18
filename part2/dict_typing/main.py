@@ -7,6 +7,8 @@
 
 # Подсказка: для решения можно использовать Any или Union из typing.
 
+from typing import Union, Dict
 
-def get_postcode(address):
-    return address.get('postcode')
+
+def get_postcode(address: Dict[str, Union[int, str]]) -> int:
+    return int(address.get('postcode'))

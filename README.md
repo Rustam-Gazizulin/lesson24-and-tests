@@ -51,7 +51,7 @@ Pycharm может предложить вам сделать это после 
 
 - part2/simple_types_str+
 - part2/simple_types_int+
-- part2/list_typing
+- part2/list_typing+
 - part2/dict_typing
 - part2/optional_typing
 - part2/convert_to_dataclass
